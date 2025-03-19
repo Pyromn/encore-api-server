@@ -13,11 +13,12 @@
     "@types/node": "^20.5.7",
     "openapi-typescript": "^7.6.1",
     "prisma": "^6.5.0",
+    "prisma-docs-generator": "^0.8.0",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   },
   "dependencies": {
-    "@prisma/client": "^5.17.0",
+    "@prisma/client": "^6.5.0",
     "encore.dev": "^1.46.10"
   },
   "optionalDependencies": {
