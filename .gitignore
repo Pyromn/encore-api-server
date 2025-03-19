@@ -1,6 +1,6 @@
 .env
-.encore
-encore.gen
+/.encore
+/encore.gen
 node_modules
 prisma
 prisma-source
