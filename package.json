@@ -13,6 +13,7 @@
     "@types/node": "^20.5.7",
     "openapi-typescript": "^7.6.1",
     "prisma": "^6.5.0",
+    "prisma-json-schema-generator": "^5.1.5",
     "typescript": "^5.8.2",
     "vitest": "^3.0.9"
   },

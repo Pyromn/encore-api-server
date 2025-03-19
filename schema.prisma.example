@@ -1,0 +1,26 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+generator docs {
+  provider              = "node ../../node_modules/prisma-docs-generator"
+  includeRelationFields = false
+  output                = "/docs"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["commerce", "identity", "security"]
+}
+
+generator jsonSchema {
+  provider                 = "prisma-json-schema-generator"
+  keepRelationScalarFields = "true"
+  schemaId                 = "some-schema-id"
+  includeRequiredFields    = "true"
+  persistOriginalType      = "true"
+  forceAnyOf               = "true"
+  output                   = "/docs-json"
+}
